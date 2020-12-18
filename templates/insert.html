@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%block child_block%}
+<div class="container">
+    <h1 class="text-centre">Greeting_Message</h1>
+    <form method="post">
+        {%csrf_token%}
+        <div class="form-group">
+            <label for="name">Name : </label>
+            <input type="text" class="form-cotrol" id="name" name="name">
+            <label for="message">Message : </label>
+            <input type="text" class="form-cotrol" id="message" name="message">
+        </div>
+        <br>
+        <input type="submit" value="Add" class="btn btn-primary btn-lg">
+    </form>
+        <br>
+        <a href="/show" class="btn btn-primary btn-lg">Show</a>
+</div>
+{%endblock%}
