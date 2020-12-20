@@ -2,7 +2,7 @@
 {%extends 'base.html'%}
 {%block child_block%}
 <div class="container">
-    <h2 class="text-centre">Type your Greeting Here...</h2>
+    <h2 class="text-centre" align="center">Type your Greeting Here...</h2>
     <form method="post">
         {%csrf_token%}
         <div class="form-group">
@@ -10,13 +10,14 @@
             <input type="text" class="form-cotrol" id="name" name="name">
         </div>
             <div class="form-group">
+
             <label for="message">Message : </label>
             <input type="text" class="form-cotrol" id="message" name="message">
         </div>
-        <br>
-        <input type="submit" value="Send" class="btn btn-primary" >
-        <a href="/show" class="btn btn-primary btn-lg">Show</a>
 
+        <br>
+        <input type="submit" value="Add" class="btn btn-primary" >
+        <a href="/show" class="btn btn-primary">Show</a>
     </form>
 </div>
 {%endblock%}
