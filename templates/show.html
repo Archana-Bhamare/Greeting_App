@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 {%extends 'base.html'%}
 {%block child_block%}
-    <div class="card" style="width: 18rem;">
+    <div class="container">
         {%for greet in greet%}
-            <div class="card-header">
+
+        <div class="card shadow p-3 mb-5 bg-white rounded " style="width: 17rem" >
+            <div class="card-header" align="center">
                 <h2 class="card-title">{{greet.name}}</h2>
             </div>
             <div class="card-body">
-                <ul class="card-text">
-                    <li>Name :{{greet.name}}</li>
-                    <li>Message :{{greet.message}}</li>
-                </ul>
+                <p class="card-text">{{greet.message}}</p>
+            </div>
+            <div class="card-button">
             <a href="/delete/{{ greet.id }}" class="btn btn-danger">Delete</a>
                 <a href="/update/{{ greet.id }}" class="btn btn-primary">Update</a>
             </div>
+        </div>
         {%endfor%}
     </div>
 
