@@ -1,0 +1,197 @@
+DEBUG:2020-12-20 21:46:59,259:# User name and message inserted
+DEBUG:2020-12-20 21:47:19,441:# User name and message inserted
+DEBUG:2020-12-20 21:47:19,442:New Database connection
+DEBUG:2020-12-20 21:47:19,442:sql_command: INSERT INTO "greet_app_person" ("name", "message") VALUES (%(0)s, %(1)s)
+params: ['Archesh', '(-_-)']
+DEBUG:2020-12-20 21:47:19,450:inserted ids [ObjectId('5fdf790f453424a52f7ff4ff')]
+INFO:2020-12-20 21:47:19,450:Your data has been successfully inserted
+DEBUG:2020-12-20 21:47:19,466:MongoClient connection closed
+DEBUG:2020-12-20 21:47:19,473:# Display all the user data
+INFO:2020-12-20 21:47:19,474:Display all the Data
+DEBUG:2020-12-20 21:47:19,476:Existing MongoClient connection closed
+DEBUG:2020-12-20 21:47:19,477:New Database connection
+DEBUG:2020-12-20 21:47:19,478:sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG:2020-12-20 21:47:19,482:Find query: {'projection': ['id', 'name', 'message']}
+DEBUG:2020-12-20 21:47:19,559:Result: (29, 'Priyanka', 'Good Night')
+DEBUG:2020-12-20 21:47:19,560:Result: (30, 'Archna', 'Sweet Dreams')
+DEBUG:2020-12-20 21:47:19,561:Result: (31, 'Manu', 'Take Care Bye')
+DEBUG:2020-12-20 21:47:19,562:Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG:2020-12-20 21:47:19,562:Result: (36, 'Sachin', 'Good Morning')
+DEBUG:2020-12-20 21:47:19,563:Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG:2020-12-20 21:47:19,563:Result: (41, 'Archesh', '(-_-)')
+DEBUG:2020-12-20 21:47:19,582:MongoClient connection closed
+WARNING:2020-12-20 21:47:19,742:Not Found: /favicon.ico
+DEBUG:2020-12-20 21:47:21,740:# Update the data
+DEBUG:2020-12-20 21:47:21,741:New Database connection
+DEBUG:2020-12-20 21:47:21,741:sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person" WHERE "greet_app_person"."id" = %(0)s LIMIT 21
+params: (41,)
+DEBUG:2020-12-20 21:47:21,745:Find query: {'filter': {'id': {'$eq': 41}}, 'projection': ['id', 'name', 'message'], 'limit': 21}
+DEBUG:2020-12-20 21:47:21,752:Result: (41, 'Archesh', '(-_-)')
+DEBUG:2020-12-20 21:47:21,758:MongoClient connection closed
+DEBUG:2020-12-20 21:47:30,246:# Update the data
+DEBUG:2020-12-20 21:47:30,247:Existing MongoClient connection closed
+DEBUG:2020-12-20 21:47:30,247:New Database connection
+DEBUG:2020-12-20 21:47:30,247:sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person" WHERE "greet_app_person"."id" = %(0)s LIMIT 21
+params: (41,)
+DEBUG:2020-12-20 21:47:30,250:Find query: {'filter': {'id': {'$eq': 41}}, 'projection': ['id', 'name', 'message'], 'limit': 21}
+DEBUG:2020-12-20 21:47:30,256:Result: (41, 'Archesh', '(-_-)')
+DEBUG:2020-12-20 21:47:30,258:sql_command: UPDATE "greet_app_person" SET "name" = %(0)s, "message" = %(1)s WHERE "greet_app_person"."id" = %(2)s
+params: ('Archesh', '(-_-)(>_<)', 41)
+DEBUG:2020-12-20 21:47:30,264:update_many: 1, matched: 1
+INFO:2020-12-20 21:47:30,264:your data has been successfully updated
+DEBUG:2020-12-20 21:47:30,268:MongoClient connection closed
+DEBUG:2020-12-20 21:47:30,275:# Display all the user data
+INFO:2020-12-20 21:47:30,275:Display all the Data
+DEBUG:2020-12-20 21:47:30,279:Existing MongoClient connection closed
+DEBUG:2020-12-20 21:47:30,279:New Database connection
+DEBUG:2020-12-20 21:47:30,280:sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG:2020-12-20 21:47:30,282:Find query: {'projection': ['id', 'name', 'message']}
+DEBUG:2020-12-20 21:47:30,768:Result: (29, 'Priyanka', 'Good Night')
+DEBUG:2020-12-20 21:47:30,769:Result: (30, 'Archna', 'Sweet Dreams')
+DEBUG:2020-12-20 21:47:30,769:Result: (31, 'Manu', 'Take Care Bye')
+DEBUG:2020-12-20 21:47:30,770:Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG:2020-12-20 21:47:30,770:Result: (36, 'Sachin', 'Good Morning')
+DEBUG:2020-12-20 21:47:30,771:Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG:2020-12-20 21:47:30,771:Result: (41, 'Archesh', '(-_-)(>_<)')
+DEBUG:2020-12-20 21:47:30,791:MongoClient connection closed
+INFO:2020-12-20 21:48:36,238:C:\Users\KatK\django_projects\greeting_project\greet_app\views.py changed, reloading.
+DEBUG:2020-12-20 21:48:36,241:Using selector: SelectSelector
+DEBUG - 2020-12-20 21:48:37,603 - New MongoClient connection
+DEBUG - 2020-12-20 21:48:37,613 - New Database connection
+DEBUG - 2020-12-20 21:48:37,627 - sql_command: SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"
+params: ()
+DEBUG - 2020-12-20 21:48:37,630 - Find query: {'projection': ['id', 'app', 'name', 'applied']}
+DEBUG - 2020-12-20 21:48:37,632 - Result: (1, 'contenttypes', '0001_initial', datetime.datetime(2020, 12, 17, 16, 3, 26, 622000))
+DEBUG - 2020-12-20 21:48:37,632 - Result: (2, 'auth', '0001_initial', datetime.datetime(2020, 12, 17, 16, 3, 30, 127000))
+DEBUG - 2020-12-20 21:48:37,633 - Result: (3, 'admin', '0001_initial', datetime.datetime(2020, 12, 17, 16, 3, 33, 733000))
+DEBUG - 2020-12-20 21:48:37,633 - Result: (4, 'admin', '0002_logentry_remove_auto_add', datetime.datetime(2020, 12, 17, 16, 3, 34, 232000))
+DEBUG - 2020-12-20 21:48:37,633 - Result: (5, 'admin', '0003_logentry_add_action_flag_choices', datetime.datetime(2020, 12, 17, 16, 3, 34, 270000))
+DEBUG - 2020-12-20 21:48:37,633 - Result: (6, 'contenttypes', '0002_remove_content_type_name', datetime.datetime(2020, 12, 17, 16, 3, 34, 348000))
+DEBUG - 2020-12-20 21:48:37,634 - Result: (7, 'auth', '0002_alter_permission_name_max_length', datetime.datetime(2020, 12, 17, 16, 3, 34, 367000))
+DEBUG - 2020-12-20 21:48:37,634 - Result: (8, 'auth', '0003_alter_user_email_max_length', datetime.datetime(2020, 12, 17, 16, 3, 34, 391000))
+DEBUG - 2020-12-20 21:48:37,634 - Result: (9, 'auth', '0004_alter_user_username_opts', datetime.datetime(2020, 12, 17, 16, 3, 34, 421000))
+DEBUG - 2020-12-20 21:48:37,634 - Result: (10, 'auth', '0005_alter_user_last_login_null', datetime.datetime(2020, 12, 17, 16, 3, 34, 449000))
+DEBUG - 2020-12-20 21:48:37,634 - Result: (11, 'auth', '0006_require_contenttypes_0002', datetime.datetime(2020, 12, 17, 16, 3, 34, 458000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (12, 'auth', '0007_alter_validators_add_error_messages', datetime.datetime(2020, 12, 17, 16, 3, 34, 482000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (13, 'auth', '0008_alter_user_username_max_length', datetime.datetime(2020, 12, 17, 16, 3, 34, 507000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (14, 'auth', '0009_alter_user_last_name_max_length', datetime.datetime(2020, 12, 17, 16, 3, 34, 534000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (15, 'auth', '0010_alter_group_name_max_length', datetime.datetime(2020, 12, 17, 16, 3, 34, 571000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (16, 'auth', '0011_update_proxy_permissions', datetime.datetime(2020, 12, 17, 16, 3, 34, 611000))
+DEBUG - 2020-12-20 21:48:37,635 - Result: (17, 'greet_app', '0001_initial', datetime.datetime(2020, 12, 17, 16, 3, 35, 121000))
+DEBUG - 2020-12-20 21:48:37,636 - Result: (18, 'sessions', '0001_initial', datetime.datetime(2020, 12, 17, 16, 3, 35, 524000))
+DEBUG - 2020-12-20 21:48:42,135 - # User name and message inserted
+WARNING - 2020-12-20 21:48:42,599 - Not Found: /favicon.ico
+DEBUG - 2020-12-20 21:48:47,681 - # Display all the user data
+INFO - 2020-12-20 21:48:47,681 - Display all the Data
+DEBUG - 2020-12-20 21:48:47,685 - New Database connection
+DEBUG - 2020-12-20 21:48:47,685 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG - 2020-12-20 21:48:47,687 - Find query: {'projection': ['id', 'name', 'message']}
+DEBUG - 2020-12-20 21:48:47,689 - Result: (29, 'Priyanka', 'Good Night')
+DEBUG - 2020-12-20 21:48:47,689 - Result: (30, 'Archna', 'Sweet Dreams')
+DEBUG - 2020-12-20 21:48:47,689 - Result: (31, 'Manu', 'Take Care Bye')
+DEBUG - 2020-12-20 21:48:47,690 - Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG - 2020-12-20 21:48:47,690 - Result: (36, 'Sachin', 'Good Morning')
+DEBUG - 2020-12-20 21:48:47,690 - Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG - 2020-12-20 21:48:47,690 - Result: (41, 'Archesh', '(-_-)(>_<)')
+DEBUG - 2020-12-20 21:48:47,715 - MongoClient connection closed
+WARNING - 2020-12-20 21:48:47,875 - Not Found: /favicon.ico
+DEBUG - 2020-12-20 21:48:50,420 - # Update the data
+DEBUG - 2020-12-20 21:48:50,421 - New Database connection
+DEBUG - 2020-12-20 21:48:50,421 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person" WHERE "greet_app_person"."id" = %(0)s LIMIT 21
+params: (41,)
+DEBUG - 2020-12-20 21:48:50,424 - Find query: {'filter': {'id': {'$eq': 41}}, 'projection': ['id', 'name', 'message'], 'limit': 21}
+DEBUG - 2020-12-20 21:48:50,432 - Result: (41, 'Archesh', '(-_-)(>_<)')
+DEBUG - 2020-12-20 21:48:50,443 - MongoClient connection closed
+DEBUG - 2020-12-20 21:48:59,129 - # Update the data
+DEBUG - 2020-12-20 21:48:59,132 - Existing MongoClient connection closed
+DEBUG - 2020-12-20 21:48:59,133 - New Database connection
+DEBUG - 2020-12-20 21:48:59,133 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person" WHERE "greet_app_person"."id" = %(0)s LIMIT 21
+params: (41,)
+DEBUG - 2020-12-20 21:48:59,137 - Find query: {'filter': {'id': {'$eq': 41}}, 'projection': ['id', 'name', 'message'], 'limit': 21}
+DEBUG - 2020-12-20 21:48:59,144 - Result: (41, 'Archesh', '(-_-)(>_<)')
+DEBUG - 2020-12-20 21:48:59,146 - sql_command: UPDATE "greet_app_person" SET "name" = %(0)s, "message" = %(1)s WHERE "greet_app_person"."id" = %(2)s
+params: ('Archesh', '(-_-)(>_<)(o_o)', 41)
+DEBUG - 2020-12-20 21:48:59,153 - update_many: 1, matched: 1
+INFO - 2020-12-20 21:48:59,153 - your data has been successfully updated
+DEBUG - 2020-12-20 21:48:59,168 - MongoClient connection closed
+DEBUG - 2020-12-20 21:48:59,175 - # Display all the user data
+INFO - 2020-12-20 21:48:59,175 - Display all the Data
+DEBUG - 2020-12-20 21:48:59,178 - Existing MongoClient connection closed
+DEBUG - 2020-12-20 21:48:59,178 - New Database connection
+DEBUG - 2020-12-20 21:48:59,179 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG - 2020-12-20 21:48:59,181 - Find query: {'projection': ['id', 'name', 'message']}
+DEBUG - 2020-12-20 21:48:59,653 - Result: (29, 'Priyanka', 'Good Night')
+DEBUG - 2020-12-20 21:48:59,654 - Result: (30, 'Archna', 'Sweet Dreams')
+DEBUG - 2020-12-20 21:48:59,655 - Result: (31, 'Manu', 'Take Care Bye')
+DEBUG - 2020-12-20 21:48:59,655 - Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG - 2020-12-20 21:48:59,656 - Result: (36, 'Sachin', 'Good Morning')
+DEBUG - 2020-12-20 21:48:59,656 - Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG - 2020-12-20 21:48:59,656 - Result: (41, 'Archesh', '(-_-)(>_<)(o_o)')
+DEBUG - 2020-12-20 21:48:59,665 - MongoClient connection closed
+DEBUG - 2020-12-20 21:49:05,956 - # Delete the data
+DEBUG - 2020-12-20 21:49:05,957 - Existing MongoClient connection closed
+DEBUG - 2020-12-20 21:49:05,957 - New Database connection
+DEBUG - 2020-12-20 21:49:05,957 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person" WHERE "greet_app_person"."id" = %(0)s LIMIT 21
+params: (30,)
+DEBUG - 2020-12-20 21:49:05,960 - Find query: {'filter': {'id': {'$eq': 30}}, 'projection': ['id', 'name', 'message'], 'limit': 21}
+DEBUG - 2020-12-20 21:49:05,970 - Result: (30, 'Archna', 'Sweet Dreams')
+DEBUG - 2020-12-20 21:49:05,972 - sql_command: DELETE FROM "greet_app_person" WHERE "greet_app_person"."id" IN (%(0)s)
+params: (30,)
+DEBUG - 2020-12-20 21:49:05,974 - delete_many: 1
+INFO - 2020-12-20 21:49:05,975 - your data has been successfully deleted
+DEBUG - 2020-12-20 21:49:05,978 - MongoClient connection closed
+DEBUG - 2020-12-20 21:49:05,983 - # Display all the user data
+INFO - 2020-12-20 21:49:05,983 - Display all the Data
+DEBUG - 2020-12-20 21:49:05,988 - Existing MongoClient connection closed
+DEBUG - 2020-12-20 21:49:05,988 - New Database connection
+DEBUG - 2020-12-20 21:49:05,988 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG - 2020-12-20 21:49:05,990 - Find query: {'projection': ['id', 'name', 'message']}
+DEBUG - 2020-12-20 21:49:06,475 - Result: (29, 'Priyanka', 'Good Night')
+DEBUG - 2020-12-20 21:49:06,476 - Result: (31, 'Manu', 'Take Care Bye')
+DEBUG - 2020-12-20 21:49:06,476 - Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG - 2020-12-20 21:49:06,477 - Result: (36, 'Sachin', 'Good Morning')
+DEBUG - 2020-12-20 21:49:06,478 - Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG - 2020-12-20 21:49:06,478 - Result: (41, 'Archesh', '(-_-)(>_<)(o_o)')
+DEBUG - 2020-12-20 21:49:06,488 - MongoClient connection closed
+WARNING - 2020-12-20 21:49:06,704 - Not Found: /favicon.ico
+DEBUG - 2020-12-20 21:49:08,223 - # User name and message inserted
+WARNING - 2020-12-20 21:49:08,370 - Not Found: /favicon.ico
+DEBUG - 2020-12-20 21:49:23,334 - # User name and message inserted
+DEBUG - 2020-12-20 21:49:23,335 - New Database connection
+DEBUG - 2020-12-20 21:49:23,335 - sql_command: INSERT INTO "greet_app_person" ("name", "message") VALUES (%(0)s, %(1)s)
+params: ['Archana', 'Good Bye']
+DEBUG - 2020-12-20 21:49:23,347 - inserted ids [ObjectId('5fdf798b354d72370ae48bb1')]
+INFO - 2020-12-20 21:49:23,347 - Your data has been successfully inserted
+DEBUG - 2020-12-20 21:49:23,352 - MongoClient connection closed
+DEBUG - 2020-12-20 21:49:23,359 - # Display all the user data
+INFO - 2020-12-20 21:49:23,359 - Display all the Data
+DEBUG - 2020-12-20 21:49:23,364 - Existing MongoClient connection closed
+DEBUG - 2020-12-20 21:49:23,364 - New Database connection
+DEBUG - 2020-12-20 21:49:23,365 - sql_command: SELECT "greet_app_person"."id", "greet_app_person"."name", "greet_app_person"."message" FROM "greet_app_person"
+params: ()
+DEBUG - 2020-12-20 21:49:23,367 - Find query: {'projection': ['id', 'name', 'message']}
+DEBUG - 2020-12-20 21:49:23,851 - Result: (29, 'Priyanka', 'Good Night')
+DEBUG - 2020-12-20 21:49:23,852 - Result: (31, 'Manu', 'Take Care Bye')
+DEBUG - 2020-12-20 21:49:23,852 - Result: (35, 'Keymon', 'Meow Meow!!!')
+DEBUG - 2020-12-20 21:49:23,853 - Result: (36, 'Sachin', 'Good Morning')
+DEBUG - 2020-12-20 21:49:23,853 - Result: (38, 'Bharat', "I'm the Boss!!!")
+DEBUG - 2020-12-20 21:49:23,854 - Result: (41, 'Archesh', '(-_-)(>_<)(o_o)')
+DEBUG - 2020-12-20 21:49:23,854 - Result: (42, 'Archana', 'Good Bye')
+DEBUG - 2020-12-20 21:49:23,863 - MongoClient connection closed
+WARNING - 2020-12-20 21:49:24,054 - Not Found: /favicon.ico
+INFO - 2020-12-20 21:51:35,701 - C:\Users\KatK\django_projects\greeting_project\greet_app\views.py changed, reloading.
+DEBUG - 2020-12-20 21:51:35,702 - Using selector: SelectSelector
+WARNING - 2020-12-20 21:51:38,964 - Not Found: /favicon.ico
+INFO - 2020-12-20 21:52:01,012 - Your data has been successfully inserted
+INFO - 2020-12-20 21:52:01,036 - Display all the Data
+WARNING - 2020-12-20 21:52:01,599 - Not Found: /favicon.ico
+INFO - 2020-12-20 21:52:10,552 - your data has been successfully updated
+INFO - 2020-12-20 21:52:10,567 - Display all the Data
+INFO - 2020-12-20 21:52:12,507 - your data has been successfully deleted
+INFO - 2020-12-20 21:52:12,515 - Display all the Data
+WARNING - 2020-12-20 21:52:13,173 - Not Found: /favicon.ico
